@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+	<head>
+		<title> Float Collapse </title>
+	</head>
+<h1> Float Collapse - Nick Clement </h1>
+
+	<h2> Article 1: How do you keep Parents of Floated Elements from Collapsing </h2>
+	<h2> <a href="http://stackoverflow.com/questions/how-do-you-keep-parents-of-floating-elements-from-collapsing/">StackOverlow Article on Float Collapsing</a> </h2>
+		<h3> This article by StackOverFlow is brief but makes the point that if floated elements have non-floated parent elements the parent will collapse. It then gives four solutions to the problem. Solution number 1 is to "float the parent" which means to give the parent div a float: left element, the second solution is to five the parent an explicit height , the third solution is to addpend a "spacer" element inside the parent element and solution four is to set parent to overflow: auto. These are all new terms for me but its interesting because the first user comment on this artcle states that the most reliable and unobtrusive solution is the .clearfix method which StackoverFlow states that you can actually add a div style="float: left; to your element which I tried to apply to my rainforest html but still doesn't seem to solve the problem I am having trying to correctly use the .clearfix</h3>
+
+<br>
+	<h2> Article 2: Fix Collapsing Elements with Floating Children</h2>
+	<h2> <a href="http://fix-collapsing-elements-with-floating-children/">Fix Collapsing Elements with Floating Children</a> </h2>
+		<h3> This article by Devin R. Olsen explains that sometimes when you have an element with styling that is contained in a parent that element may collapse or dissappear when its children elements are using a CSS float style. He then explains that a remedy for this is to float the parent element as well but this is a bad idea for two reasons: the first being that you are adding float styling in more places than are required and the second reason is that if you want to have a center aligned page then because of the float your alignment is not centered because it is now floating. The author then explains that by simply adding overflow.hidden; to the parent element the browser will then re-think how this element should look and is more mindful about children elements who are floating. This makes sense because it seems like the overfow:hidden simply makes that parent element stay centered and contain the children div's while not affecting the styling of the parent. </h3>
+
+
+</html>
