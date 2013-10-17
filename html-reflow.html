@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+	<head>
+		<title> HTML Reflow </title>
+	</head>
+<h1> Nick Clement </h1>
+
+	<h2> Article 1: Rendering: Repaint, Reflow/relayout,restyle,  </h2>
+	<h2> <a href="http://www.phpied.com/rendering-repaint-reflowrelayout-restyle/">Rendering: Rapaint, Reflow/relayout, restyle</a> </h2>
+		<h3> This article by Stoyan's phpied.com is pretty in depth . It starts of by describing how the Rendering process involves how browsers interpret code from your page. The browser parses out the HTML source code and creates the Document Object Model, then the browser constucts a render tree which is similar to the DOM but also includes styling and other invisible elements. Once the render tree is constructed the browser can then paint the render tree nodes on the screeen. The author then explains how reflows are required when parts of the render tree need to be revailidated and the node dimensions recalculated. When parts of the screen need to be updated like styling then a repaint is neccesary. The author then states how repaints and reflows can be excessive, they can hurt the user experience and make the UI appear sluggish. The author then describes how to minimize repaints and reflows. In a nutshell it sounds like it is wise for developers to use styling elements that go across the entire class rather than individual elements. This makes perfect sense, the less styling the browser needs to interpret to faster the site will run.</h3>
+
+<br>
+	<h2> Article 2: Reflows & Repaints: CSS Performance making your JavaScript slow?</h2>
+	<h2> <a href="http://www.stubbornella.org/content/2009/03/27/reflows-repaints-css-performance-making-your-javascript-slow/">Fix Collapsing Elements with Floating Children</a> </h2>
+		<h3> This article by stubbornella.org does a good job explaining the basic difference between reflows and repaints. In a nuthshell a reflow affects the layout of a page while repaints affect visibility, outline or background color. The author then describes a number of best practices in avoiding a repaint or a reflow. These all seems to make sense, for example the author recommends changing classes as low in the DOM tree as possible. This seems to make sense to me because it seems like the browser would have to do less work if there are minimal class changes. The one example that did not make sense to me is the recommendation to avoid tables for layout. I'm sure I will understand this better when/if we get to table. </h3>
+
+
+</html>
